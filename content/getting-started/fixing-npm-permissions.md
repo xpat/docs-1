@@ -18,7 +18,7 @@ You can fix this problem using one of three options:
 You should back-up your computer before moving forward.
 
 
-## Option 1: Change the permission to npm's default directory
+## Option A: Change the permission to npm's default directory
 
 1. Find the path to npm's directory:
 
@@ -34,7 +34,7 @@ You should back-up your computer before moving forward.
     This changes the permissions of the sub-folders used by npm and some other tools (`lib/node_modules`, `bin`, and `share`).
 
 
-## Option 2: Change npm's default directory to another directory
+## Option B: Change npm's default directory to another directory
 
 There are times when you do not want to change ownership of the default directory that npm uses (i.e. `/usr`) as this could cause some problems, for example if you are sharing the system with other users.
 
@@ -65,7 +65,7 @@ Instead of steps 2-4 you can also use the corresponding ENV variable (e.g. if yo
         NPM_CONFIG_PREFIX=~/.npm-global
         
 
-## Option 3: Use a package manager that takes care of this for you.
+## Option C: Use a package manager that takes care of this for you.
 
 If you're doing a fresh install of node on Mac OS you can avoid this problem altogether by using the [Homebrew](http://brew.sh) package manager.  Homebrew sets things up out of the box with the correct permissions.
 
